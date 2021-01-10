@@ -48,7 +48,19 @@ class RegisterViewController: CodeAcademyViewController {
     
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         if textField == passwordTextField {
+            let alert = UIAlertController(
+                title: "ERROR!",
+                message: "Please fill Username field",
+                preferredStyle: .alert
+            )
+            let alertButton = UIAlertAction(
+                title: "OK",
+                style: .default
+            )
+            alert.addAction(alertButton)
+            present(alert, animated: true, completion: nil)
             return !(usernameTextField.text ?? "").isEmpty
+  
         }
         return true
     }

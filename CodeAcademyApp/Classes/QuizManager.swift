@@ -14,26 +14,26 @@ struct QuizManager {
     
     static var questions = [
         Question(
-            question: "Questioin1",
-            correctAnswer: "first",
-            firstChoice: "first",
-            secondChoice: "second",
-            thirdChoice: "third",
-            fourthChoice: "fourth"),
+            question: "How many days does it take for the Earth to orbit the Sun?",
+            correctAnswer: "365",
+            firstChoice: "265",
+            secondChoice: "364",
+            thirdChoice: "365",
+            fourthChoice: "366"),
         Question(
-            question: "Klausimelis",
-            correctAnswer: "third",
-            firstChoice: "pirmas atsakymas",
-            secondChoice: "antras atsakymas",
-            thirdChoice: "trecias atsakymas",
-            fourthChoice: "ketvirtas atsakymas"),
+            question: "When did they open the London underground?",
+            correctAnswer: "1863",
+            firstChoice: "1963",
+            secondChoice: "1836",
+            thirdChoice: "1906",
+            fourthChoice: "1886"),
         Question(
-            question: "Kelintais metais gime Steve Jobs",
-            correctAnswer: "1955",
-            firstChoice: "1965",
-            secondChoice: "1955",
-            thirdChoice: "1956",
-            fourthChoice: "1966")
+            question: "When was Netflix founded",
+            correctAnswer: "1997",
+            firstChoice: "2001",
+            secondChoice: "1997",
+            thirdChoice: "2009",
+            fourthChoice: "2015")
     ]
     
     static func handleQuestion(_ question: Question, answerText: String) {

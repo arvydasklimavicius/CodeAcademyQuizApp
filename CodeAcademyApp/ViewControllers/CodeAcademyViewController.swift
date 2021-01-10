@@ -32,7 +32,7 @@ class CodeAcademyViewController: UIViewController {
     lazy var failureAlert: UIAlertController = {
         let alert = UIAlertController(
             title: "Failure!",
-            message: "Login failed!",
+            message: "Operation failed",
             preferredStyle: .alert
         )
         let alertButton = UIAlertAction(
@@ -42,8 +42,7 @@ class CodeAcademyViewController: UIViewController {
         alert.addAction(alertButton)
         return alert
     }()
-
-
+    
 }
 
 

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Foundation
 
 class QuestionViewController: UIViewController {
 
@@ -19,6 +20,28 @@ class QuestionViewController: UIViewController {
     
     var currentQuestion: Question?
     var questionIndex = 0
+    private let quizTimer = QuizTimer()
+    
+    lazy var timeIsUpAlert: UIAlertController = {
+        let alert = UIAlertController(
+            title: "Time is Up!",
+            message: "Do you want to think longer?",
+            preferredStyle: .alert
+        )
+        let alertButton = UIAlertAction(
+            title: "Yes",
+            style: .default) { [unowned self] _ in
+            self.quizTimer.start()
+        }
+        let cancelButton = UIAlertAction(
+            title: "Cancel",
+            style: .destructive
+            )
+        alert.addAction(alertButton)
+        alert.addAction(cancelButton)
+        return alert
+        
+    }()
     
 
     // MARK: - Button actions
@@ -37,12 +60,15 @@ class QuestionViewController: UIViewController {
 //        }
         
     }
+    
 
     // MARK: - Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
         startQuiz()
+        quizTimer.delegate = self
+        quizTimer.start()
     }
     
     
@@ -79,6 +105,25 @@ extension QuestionViewController {
         }
         
     }
+}
+
+//MARK: - Delegates
+
+extension QuestionViewController: QuizTimerDelegate {
+    
+    func quizTimerDidFire(_ quizTimer: QuizTimer) {
+        present(timeIsUpAlert, animated: true, completion: nil)
+    }
+    
+    func quizTimerTimeInterval() -> Double {
+        return 10
+    }
+    
+    func quizTimerShouldRepeat() -> Bool {
+        return false
+    }
+    
+    
 }
 
 
