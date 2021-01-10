@@ -67,7 +67,7 @@ extension QuestionViewController {
     
     func nextQuestion() {
         questionIndex += 1
-        if questionIndex <= QuizManager.questions.count {
+        if questionIndex < QuizManager.questions.count {
             let firstQuestion = QuizManager.questions[questionIndex]
             questionLabel.text = firstQuestion.question
             firstChoiceButton.setTitle(firstQuestion.firstChoice, for: .normal)

@@ -19,12 +19,12 @@
 		328BFDEF258509D300DFD3CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 328BFDED258509D300DFD3CC /* Main.storyboard */; };
 		328BFDF1258509D700DFD3CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 328BFDF0258509D700DFD3CC /* Assets.xcassets */; };
 		328BFDF4258509D700DFD3CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 328BFDF2258509D700DFD3CC /* LaunchScreen.storyboard */; };
+		CE1ACCCC25A6117B00FF73F8 /* QuizHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE1ACCCB25A6117B00FF73F8 /* QuizHome.storyboard */; };
 		CE89155825A3796600C012B9 /* LocalDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE89155725A3796600C012B9 /* LocalDatabase.swift */; };
 		CE89155B25A380FA00C012B9 /* QuizManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE89155A25A380FA00C012B9 /* QuizManager.swift */; };
 		CE89155E25A3816300C012B9 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE89155D25A3816300C012B9 /* Question.swift */; };
 		CE89156125A395F600C012B9 /* CodeAcademyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE89156025A395F600C012B9 /* CodeAcademyViewController.swift */; };
 		CE89156425A4D14E00C012B9 /* AddQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE89156325A4D14E00C012B9 /* AddQuestionViewController.swift */; };
-		CE89156725A4D16500C012B9 /* QuizHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE89156625A4D16500C012B9 /* QuizHome.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,12 +42,12 @@
 		328BFDF0258509D700DFD3CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		328BFDF3258509D700DFD3CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		328BFDF5258509D700DFD3CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE1ACCCB25A6117B00FF73F8 /* QuizHome.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = QuizHome.storyboard; sourceTree = "<group>"; };
 		CE89155725A3796600C012B9 /* LocalDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDatabase.swift; sourceTree = "<group>"; };
 		CE89155A25A380FA00C012B9 /* QuizManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizManager.swift; sourceTree = "<group>"; };
 		CE89155D25A3816300C012B9 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		CE89156025A395F600C012B9 /* CodeAcademyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeAcademyViewController.swift; sourceTree = "<group>"; };
 		CE89156325A4D14E00C012B9 /* AddQuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddQuestionViewController.swift; sourceTree = "<group>"; };
-		CE89156625A4D16500C012B9 /* QuizHome.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = QuizHome.storyboard; path = ../../../QuizHome.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +91,7 @@
 			children = (
 				328BFDF2258509D700DFD3CC /* LaunchScreen.storyboard */,
 				328BFDED258509D300DFD3CC /* Main.storyboard */,
-				CE89156625A4D16500C012B9 /* QuizHome.storyboard */,
+				CE1ACCCB25A6117B00FF73F8 /* QuizHome.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -187,7 +187,7 @@
 				328BFDF4258509D700DFD3CC /* LaunchScreen.storyboard in Resources */,
 				328BFDF1258509D700DFD3CC /* Assets.xcassets in Resources */,
 				328BFDEF258509D300DFD3CC /* Main.storyboard in Resources */,
-				CE89156725A4D16500C012B9 /* QuizHome.storyboard in Resources */,
+				CE1ACCCC25A6117B00FF73F8 /* QuizHome.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

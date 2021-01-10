@@ -17,6 +17,7 @@ class RegisterViewController: CodeAcademyViewController {
     override func viewDidLoad() {
         usernameTextField.delegate = self
         passwordTextField.delegate = self
+        
     }
 
     
@@ -32,7 +33,29 @@ class RegisterViewController: CodeAcademyViewController {
             present(failureAlert, animated: true)
         }
     }
+
+//MARK: - textFields delegates
+    
+    func textField(_ textField: UITextField,
+                   shouldChangeCharactersIn range: NSRange,
+                   replacementString string: String) -> Bool {
+        if textField == usernameTextField {
+            let replacementSet = CharacterSet(charactersIn: string)
+            return CharacterSet.alphanumerics.isSuperset(of: replacementSet)
+        }
+        return true
+    }
+    
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        if textField == passwordTextField {
+            return !(usernameTextField.text ?? "").isEmpty
+        }
+        return true
+    }
+    
     
 }
+
+
 
 
